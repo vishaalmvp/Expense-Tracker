@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+  <div class="container">
+    <h1>💰 Expense Tracker</h1>
+
+    <!-- Dark/Light Mode Toggle -->
+    <div class="mode-toggle">
+      <button id="toggle-mode">🌙 Dark Mode</button>
+    </div>
+
+    <!-- Month Navigation -->
+    <div class="month-nav">
+      <button class="nav-btn" id="prev-month">◀ Prev</button>
+      <h3 id="current-month"></h3>
+      <button class="nav-btn" id="next-month">Next ▶</button>
+    </div>
+
+    <!-- Balance and Summary -->
+    <div class="balance card">
+      <h2>Your Balance</h2>
+      <h3 id="balance">₹0.00</h3>
+    </div>
+
+    <div class="summary">
+      <div class="income card">
+        <h4>Income</h4>
+        <p id="money-plus">₹0.00</p>
+      </div>
+      <div class="expense card">
+        <h4>Expense</h4>
+        <p id="money-minus">₹0.00</p>
+      </div>
+    </div>
+
+    <!-- Add Transaction -->
+    <div class="transaction-controls card">
+      <h3>Add Transaction</h3>
+      <input type="text" id="text" placeholder="Enter description">
+      <input type="number" id="amount" placeholder="Enter amount">
+      <div class="buttons">
+        <button class="income-btn" id="add-income">💚 Add Income</button>
+        <button class="expense-btn" id="add-expense">❤️ Add Expense</button>
+      </div>
+    </div>
+
+    <!-- History and Refresh -->
+    <div class="history-controls card">
+      <button class="history-btn" id="show-history">📜 Show All Months</button>
+      <button class="refresh-btn" id="refresh-btn">🔄 Refresh Month</button>
+    </div>
+
+    <!-- Transaction List -->
+    <h3>Transaction History</h3>
+    <ul id="transaction-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
