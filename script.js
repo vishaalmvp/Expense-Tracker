@@ -1,3 +1,4 @@
+// Trigger update for GitHub Pages case-sensitive rename
 // Elements
 const balance = document.getElementById("balance");
 const moneyPlus = document.getElementById("money-plus");
